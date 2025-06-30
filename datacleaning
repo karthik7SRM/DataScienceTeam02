@@ -44,4 +44,4 @@ df = pd.read_excel("twitter_dataset_with_followers.csv")
 df['tokens'] = df['Text_cleaned'].astype(str).apply(preprocess_text_return_tokens)
 
 # Save the new DataFrame with the tokens column
-df.to_csv("twitter_dataset_with_tokens.csv", index=False)
+df.to_csv("tweets_cleaned_tokenized.csv", index=False)
