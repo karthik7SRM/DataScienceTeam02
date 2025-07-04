@@ -14,7 +14,10 @@ This real-time team-based project replicates an end-to-end data science pipeline
   <a href="https://github.com/karthik7SRM">
     <img src="https://github.com/karthik7SRM.png" width="50px;" alt="Karthik S"/>
   </a>
-  <a href="">
+  <a href="https://github.com/Jasvant-panigrahi">
     <img src="https://avatars.githubusercontent.com/u/158751590?v=4" width = "50px;" alt="Jasvant"/>
+  </a>
+  <a href="https://github.com/kundanareddy2830">
+     <img src="https://avatars.githubusercontent.com/u/188742620?v=4" width ="50px;" alt="Kundana"/>
   </a>
 </p>
