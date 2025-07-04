@@ -29,4 +29,7 @@ This real-time team-based project replicates an end-to-end data science pipeline
   <a href="https://github.com/Mohit220404">
     <img src="https://avatars.githubusercontent.com/u/143169562?v=4" width="50px;" alt="Mohit">   
   </a>
+  <a href="https://github.com/Suhani1104">
+     <img src="https://avatars.githubusercontent.com/u/138677703?v=4" width="50px;" alt="Suhani">
+  </a>
 </p>
