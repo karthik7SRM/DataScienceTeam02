@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tweet Virality Predictor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 30px;
+    }
+    .container {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    h2 {
+      text-align: center;
+    }
+    .result {
+      background: #e2f0d9;
+      padding: 10px;
+      margin-top: 20px;
+      border-left: 5px solid #28a745;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Tweet Virality Predictor</h2>
+    <form action="/predict" method="POST">
+      
+      <label for="Text_cleaned">Tweet Text:</label>
+      <textarea name="Text_cleaned" required></textarea>
+
+      <label for="Followers">Followers Count:</label>
+      <input type="number" name="Followers" required>
+
+      <label for="Likes">Likes Count:</label>
+      <input type="number" name="Likes" required>
+
+      <label for="Category">Category:</label>
+      <select name="Category" required>
+        <option value="Politics">Politics</option>
+        <option value="Sports">Sports</option>
+        <option value="Entertainment">Entertainment</option>
+        <option value="Tech">Tech</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="DayOfWeek">Day of Week:</label>
+      <select name="DayOfWeek" required>
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+        <option value="Sunday">Sunday</option>
+      </select>
+
+      <label for="Month">Month:</label>
+      <select name="Month" required>
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="September">September</option>
+        <option value="October">October</option>
+        <option value="November">November</option>
+        <option value="December">December</option>
+      </select>
+
+      <label for="time">Time (HH:MM:SS):</label>
+      <input type="text" name="time" placeholder="e.g. 14:35:22" required>
+
+      <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction_text %}
+      <div class="result">
+        {{ prediction_text }}
+      </div>
+    {% endif %}
+  </div>
+</body>
+</html>
